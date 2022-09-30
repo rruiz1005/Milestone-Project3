@@ -16,9 +16,9 @@ const Login = () => {
     const navigate = useNavigate();
     const createOrGetUser = async (response) => {
         const decoded = jwt_decode(response.credential);
-        const { name, picture, sub } = decoded;
+        const { name, picture, googleId } = decoded;
         const user =  {
-            _id: sub,
+            _id: googleId,
             _type: 'user',
             userName: name,
             image: picture
