@@ -8,6 +8,8 @@ import { client } from '../client';
 import MasonryLayout from './MasonryLayout';
 import Spinner from './Spinner';
 
+const randomImage = "https://source.unsplash.com/1600x900/?nature,photography,technology"
+
 const activeBtnStyles = 'bg-red-500 text-white font-bold p-2 rounded-full w-20 outline-none';
 const notActiveBtnStyles = 'bg-primary mr-4 text-black font-bold p-2 rounded-full w-20 outline-none';
 
@@ -59,9 +61,9 @@ const UserProfile = () => {
         <div className="relative flex flex-col mb-7">
           <div className="flex flex-col justify-center items-center">
             <img
+              src={randomImage}
               className=" w-full h-370 2xl:h-510 shadow-lg object-cover"
-              src="https://source.unsplash.com/1600x900/?nature,photography,technology"
-              alt="user-pic"
+              alt="banner-pic"
             />
             <img
               className="rounded-full w-20 h-20 -mt-10 shadow-xl object-cover"
