@@ -1,3 +1,5 @@
+// Sanity queries
+
 export const categories = [
   {
     name: 'cars',
