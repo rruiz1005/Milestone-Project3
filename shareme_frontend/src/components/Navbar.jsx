@@ -31,7 +31,7 @@ const Navbar = ({ searchTerm, setSearchTerm, user }) => {
         );
     }
     
-    // return null;
+    return null;
 };
 
 export default Navbar;
